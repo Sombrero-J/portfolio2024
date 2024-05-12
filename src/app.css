@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+    /* Color Palette */
+    --color-red-100: hsla(351, 67%, 84%, 1); 
+    --color-red-200: hsla(351, 68%, 76%, 1);
+    --color-red-300: hsla(351, 68%, 68%, 1);
+    --color-red-400: hsla(351, 68%, 60%, 1);
+    --color-red-500: hsla(351, 68%, 52%, 1);
+    --color-red-600: hsla(351, 63%, 44%, 1);
+    --color-red-700: hsla(351, 64%, 36%, 1);
+    --color-red-800: hsla(351, 64%, 28%, 1);
+    --color-red-900: hsla(351, 65%, 20%, 1);
+
+    --color-orange-100: hsla(8, 65%, 86%, 1); 
+    --color-orange-200: hsla(8, 64%, 77%, 1);
+    --color-orange-300: hsla(8, 64%, 68%, 1);
+    --color-orange-400: hsla(8, 64%, 59%, 1);
+    --color-orange-500: hsla(9, 64%, 50%, 1);
+    --color-orange-600: hsla(8, 63%, 41%, 1);
+    --color-orange-700: hsla(8, 63%, 32%, 1);
+    --color-orange-800: hsla(8, 63%, 23%, 1);
+    --color-orange-900: hsla(8, 63%, 19%, 1);
+
+    --color-yellow-100: hsla(45, 100%, 85%, 1); 
+    --color-yellow-200: hsla(45, 100%, 77%, 1);
+    --color-yellow-300: hsla(45, 100%, 68%, 1);
+    --color-yellow-400: hsla(45, 100%, 60%, 1);
+    --color-yellow-500: hsla(45, 100%, 52%, 1);
+    --color-yellow-600: hsla(45, 93%, 44%, 1);
+    --color-yellow-700: hsla(45, 93%, 36%, 1);
+    --color-yellow-800: hsla(45, 94%, 27%, 1);
+    --color-yellow-900: hsla(45, 96%, 19%, 1);
+
+    --color-green-100: hsla(95, 17%, 82%, 1); 
+    --color-green-200: hsla(96, 15%, 70%, 1);
+    --color-green-300: hsla(96, 14%, 58%, 1);
+    --color-green-400: hsla(96, 15%, 47%, 1);
+    --color-green-500: hsla(96, 24%, 35%, 1);
+    --color-green-600: hsla(96, 24%, 28%, 1);
+    --color-green-700: hsla(96, 24%, 21%, 1);
+    --color-green-800: hsla(96, 24%, 14%, 1);
+    --color-green-900: hsla(96, 24%, 7%, 1);
+
+    --color-cyan-100: hsla(180, 59%, 79%, 1); 
+    --color-cyan-200: hsla(180, 55%, 70%, 1);
+    --color-cyan-300: hsla(180, 53%, 61%, 1);
+    --color-cyan-400: hsla(180, 52%, 52%, 1);
+    --color-cyan-500: hsla(180, 69%, 43%, 1);
+    --color-cyan-600: hsla(180, 69%, 34%, 1);
+    --color-cyan-700: hsla(180, 69%, 26%, 1);
+    --color-cyan-800: hsla(180, 69%, 17%, 1);
+    --color-cyan-900: hsla(180, 69%, 9%, 1);
+
+    --color-blue-100: hsla(254, 87%, 84%, 1); 
+    --color-blue-200: hsla(254, 87%, 76%, 1);
+    --color-blue-300: hsla(254, 88%, 68%, 1);
+    --color-blue-400: hsla(254, 88%, 60%, 1);
+    --color-blue-500: hsla(254, 88%, 52%, 1);
+    --color-blue-600: hsla(254, 81%, 44%, 1);
+    --color-blue-700: hsla(254, 82%, 36%, 1);
+    --color-blue-800: hsla(254, 83%, 28%, 1);
+    --color-blue-900: hsla(254, 84%, 20%, 1);
+
+    --color-goldenbrown-100: hsla(36, 44%, 82%, 1); 
+    --color-goldenbrown-200: hsla(36, 44%, 73%, 1);
+    --color-goldenbrown-300: hsla(36, 43%, 65%, 1);
+    --color-goldenbrown-400: hsla(36, 43%, 56%, 1);
+    --color-goldenbrown-500: hsla(36, 47%, 48%, 1);
+    --color-goldenbrown-600: hsla(36, 47%, 39%, 1);
+    --color-goldenbrown-700: hsla(36, 47%, 30%, 1);
+    --color-goldenbrown-800: hsla(36, 47%, 22%, 1);
+    --color-goldenbrown-900: hsla(37, 47%, 13%, 1);
+
+    --color-gray-100: hsla(222, 4%, 91%, 1); 
+    --color-gray-200: hsla(222, 4%, 82%, 1);
+    --color-gray-300: hsla(222, 4%, 73%, 1);
+    --color-gray-400: hsla(222, 4%, 64%, 1);
+    --color-gray-500: hsla(222, 5%, 45%, 1);
+    --color-gray-600: hsla(222, 12%, 27%, 1);
+    --color-gray-700: hsla(222, 43%, 9%, 1);
+
+    --color-black: hsla(222, 43%, 9%, 1);
+    --color-white: hsla(35, 55%, 96%, 1);
+    --color-text: hsla(26, 100%, 94%, 1);
+
+    --gradient-primary: linear-gradient(
+      50deg,
+      rgba(229, 213, 189, 1) 0%,
+      rgba(229, 213, 189, 0.1) 100%
+    );
+    
+    --color-primary: var(--color-goldenbrown-700);
+    --color-primary-dark: var(--color-black);
+    --color-secondary: var(--color-goldenbrown-100);
+    --color-secondary-dark: var(--color-gray-500);
+    --color-accent: var(--color-green-100);
+    --color-background: var(--color-white);
+    --color-text-primary-black: var(--color-black);
+    --color-text-primary-white: var(--color-white);
+    --color-text-section-heading: var(--color-goldenbrown-300);
+    --color-text-accent: var(--color-goldenbrown-700);
+    --color-text-inverse: #ffffff;
+    --color-border: #dddddd;
+    --color-shadow: hsla(0, 0%, 0%, 0.25);
+  
+    /* Typography */
+    --font-family-display-primary: 'eloquentjfpro', serif;
+    --font-family-display-secondary: 'tangier', sans-serif;
+    --font-family-display-footer: 'sinete', sans-serif;
+    --font-family-heading-primary: 'Playfair Display', serif;
+    --font-family-heading-secondary: 'anth', sans-serif;
+    --font-family-body-primary: 'Noto Sans', sans-serif;
+    /* 24 30 36 48 60 128*/
+    --font-size-xs: 1.5rem;
+    --font-size-sm: 1.875rem;
+    --font-size-md: 2.25rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 3.75rem;
+    --font-size-xxl: 8rem;
+
+    --line-height-base: 1.5;
+
+    --font-weight-1: 100;
+    --font-weight-3: 300;
+    --font-weight-4: 400;
+    --font-weight-5: 500;
+    --font-weight-6: 600;
+  
+    /* Spacing */
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-48: 48px;
+    --spacing-64: 64px;
+
+    /* Padding */
+    --padding-3: 0.33em;
+    --padding-8: 0.5em;
+    --padding-16: 1em;
+    --padding-24: 1.5em;
+    --padding-32: 2em;
+    --padding-48: 3em;
+  
+    /* Borders */
+    --border-radius-sm: 10px;
+    --border-radius-md: 25px;
+    --border-radius-lg: 128px;
+    --border-width: 1px;
+    --border-style: solid;
+  
+    /* Shadows */
+    --shadow-sm: 0 2px 2px var(--color-shadow);
+    --shadow-md: 0 4px 4px var(--color-shadow);
+    --shadow-lg: 0 6px 6px var(--color-shadow);
+  
+    /* Transitions */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+  
+    /* Z-index */
+    --z-index-low: 10;
+    --z-index-medium: 100;
+    --z-index-high: 1000;
+  }
