@@ -4,8 +4,8 @@
   import LongCard from "$lib/components/longCard.svelte";
   import ScrollBar from "$lib/components/scrollBar.svelte";
   import SectionHeading from "$lib/components/sectionHeading.svelte";
-  import IconsComponent from "$lib/components/iconsComponent.svelte";
   import IconsShortCard from "$lib/components/iconsShortCard.svelte";
+  import PhotoText from "$lib/components/photoText/photoText.svelte";
 </script>
 
 <div class="hero">
@@ -33,9 +33,42 @@
   </div>
 
   <SectionHeading heading="Awards" />
+  <div class="awards-container">
+    <div class="awards-container__left">
+      <div class="cushion"></div>
+      <PhotoText left={true} image="microsoftregional" />
+      <PhotoText left={true} image="microsoftbusiness" />
+    </div>
+    <div class="awards-container__right">
+      <PhotoText left={false} image="tezos" />
+      <PhotoText left={false} image="london42" />
+    </div>
+  </div>
+
+  <SectionHeading heading="Projects" />
+
 </div>
 
 <style>
+  .awards-container__right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .awards-container__left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .cushion {
+    height: 5rem;
+  }
+  .awards-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
   .hero {
     display: flex;
     flex-direction: column;
