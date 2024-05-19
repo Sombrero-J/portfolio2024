@@ -6,6 +6,9 @@
   import SectionHeading from "$lib/components/sectionHeading.svelte";
   import IconsShortCard from "$lib/components/iconsShortCard.svelte";
   import PhotoText from "$lib/components/photoText/photoText.svelte";
+  import ProjectCard from "$lib/components/projectCard/projectCard.svelte";
+  import Title from "$lib/components/experienceText/title.svelte";
+  import Footer from "$lib/components/footer/footer.svelte";
 </script>
 
 <div class="hero">
@@ -46,10 +49,44 @@
   </div>
 
   <SectionHeading heading="Projects" />
+  <div class="project-section">
+    <ProjectCard
+      title="TruthChain"
+      githublink="https://github.com/Sombrero-J/portfolio2024"
+      body={`Decentralised Blockchain Application \n Validating Information through Stake Voting \n Svelte - SmartPy - Prisma`}
+    />
+    <ProjectCard
+      title="Exe.Learn.AI"
+      githublink="https://github.com/Sombrero-J/portfolio2024"
+      body={`Decentralised Blockchain Application \n Validating Information through Stake Voting \n Svelte - SmartPy - Prisma`}
+    />
+    <ProjectCard
+      title="Principle.AI"
+      githublink="https://github.com/Sombrero-J/portfolio2024"
+      body={`Decentralised Blockchain Application \n Validating Information through Stake Voting \n Svelte - SmartPy - Prisma`}
+    />
+    <ProjectCard
+      title="2D Interactive Shooting Game"
+      githublink="https://github.com/Sombrero-J/portfolio2024"
+      body={`Decentralised Blockchain Application \n Validating Information through Stake Voting \n Svelte - SmartPy - Prisma`}
+    />
+  </div>
 
+  <SectionHeading heading="Experience" />
+  <Title title="Student Representative" location="City, Uni" year={2024} />
+  <Title title="Course Ambassador" location="City, Uni" year={2023} />
+  <Footer />
 </div>
 
 <style>
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    gap: 1rem;
+  }
   .awards-container__right {
     display: flex;
     flex-direction: column;
